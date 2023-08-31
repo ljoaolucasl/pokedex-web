@@ -13,7 +13,8 @@ export class PokemonService {
         return {
             id: obj.id,
             nome: obj.name,
-            imageUrl: obj.sprites.front_default
+            tipo: obj.types[0].type.name,
+            imageUrl: obj.sprites.other['official-artwork'].front_default
         };
     }
 }

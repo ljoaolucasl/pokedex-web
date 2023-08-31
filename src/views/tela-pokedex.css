@@ -84,7 +84,12 @@ form {
     font-weight: 600;
 }
 
-.id-pokemon, .name-pokemon {
+.tipo-pokemon {
+    border-radius: 0.5rem;
+    padding-inline: 1em;
+}
+
+.id-pokemon, .name-pokemon, .tipo-pokemon {
     text-align: center;
     font-size: 2rem;
     font-weight: 400;
@@ -93,7 +98,7 @@ form {
 .image-pokemon {
     display: flex;
     margin: auto;
-    width: 15vw;
+    width: 15em;
 }
 
 /* Smartphone Estilo */
