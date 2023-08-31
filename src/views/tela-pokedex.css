@@ -1,0 +1,107 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: rgb(255,75,75);
+    background: linear-gradient(90deg, rgba(255,75,75,1) 0%,
+     rgba(177,9,9,1) 50%, rgba(255,75,75,1) 100%);
+    margin: 0;
+    max-width: 100%;
+}
+
+/* * {
+    outline: solid 0.5px red;
+} */
+
+.pokedex-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 3rem;
+    width: 80%;
+    background: #5f9ac1;
+    background: linear-gradient(180deg, rgba(95,154,193,1) 0%, rgba(207,236,255,1) 17%,
+     rgba(175,223,255,1) 50%, rgba(94,154,194,1) 86%, rgba(95,154,193,1) 100%);
+    border: solid 0.15rem #3f3f3f;
+    border-radius: 1rem;
+    padding-block: 5% 7%;
+    box-shadow: 0 0 4rem #c8e9ffba;
+}
+
+form {
+    margin-inline: auto;
+    width: 75%;
+}
+
+.controles {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    background-color: #466c85;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.input-nome {
+    width: 50%;
+    padding: 1rem 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.btn-buscar {
+    width: 20%;
+    padding: 1rem 0rem;
+    background-color: #2b3237;
+    color: #fff;
+    border: none;
+    border-radius: 100rem;
+    cursor: pointer;
+    font-size: 150%;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-limpar {
+    width: 20%;
+    padding: 1rem 0rem;
+    background-color: #2b3237;
+    color: #fff;
+    border: none;
+    border-radius: 100rem;
+    cursor: pointer;
+    font-size: 150%;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.informations-content {
+    background-color: #c1daea;
+    border-radius: 0 0 1rem 1rem;
+    padding-inline: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.id-pokemon, .name-pokemon {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.image-pokemon {
+    display: flex;
+    margin: auto;
+    width: 30vw;
+}
