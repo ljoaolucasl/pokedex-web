@@ -6,10 +6,7 @@ body {
     max-width: 100%;
 }
 
-/* * {
-    outline: solid 0.5px red;
-} */
-
+/* Painel Principal */
 .pokedex-content {
     display: flex;
     justify-content: center;
@@ -26,6 +23,7 @@ body {
     box-shadow: 0 0 4rem #c8e9ffba;
 }
 
+/* Formulario */
 form {
     margin-inline: auto;
     width: 75%;
@@ -69,6 +67,7 @@ form {
     background-color: #1c2022;
 }
 
+/* Informações Pokémon */
 .informations-content {
     min-height: 25rem;
     background-color: #c1daea;
@@ -97,6 +96,7 @@ form {
     width: 15vw;
 }
 
+/* Smartphone Estilo */
 @media (max-width: 768px) {
     .pokedex-content {
         width: 95%;

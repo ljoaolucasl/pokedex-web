@@ -45,14 +45,14 @@ class PokedexView {
     
     
     private pesquisarPokemon(nome: string) {
-        this.pokemonService.obterPokemonPorNome(nome)
+        this.pokemonService.obterPokemonPorNome(nome.toLowerCase())
         .then(poke => this.gerarCard(poke))
-        .catch(err => console.log('Pokemon não encontrado!', err));
+        .catch(err => console.log('Pokémon não encontrado!', err));
     }
 
     private gerarCard(pokemon: Pokemon): void {
         this.txtId.textContent = pokemon.id.toString();
-        this.txtName.textContent = pokemon.nome;
+        this.txtName.textContent = pokemon.nome.charAt(0).toUpperCase() + pokemon.nome.slice(1);;
         this.imgPokemon.src = pokemon.imageUrl;
     }
 
