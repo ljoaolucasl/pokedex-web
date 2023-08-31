@@ -70,7 +70,7 @@ form {
 }
 
 .informations-content {
-    min-height: 30rem;
+    min-height: 25rem;
     background-color: #c1daea;
     border-radius: 0 0 1rem 1rem;
     padding-inline: 1rem;
@@ -94,7 +94,7 @@ form {
 .image-pokemon {
     display: flex;
     margin: auto;
-    width: 25vw;
+    width: 15vw;
 }
 
 @media (max-width: 768px) {
