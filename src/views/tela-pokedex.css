@@ -1,6 +1,5 @@
 body {
     font-family: 'Rajdhani', sans-serif;
-    background: rgb(255,75,75);
     background: linear-gradient(90deg, rgba(255,75,75,1) 0%,
      rgba(177,9,9,1) 50%, rgba(255,75,75,1) 100%);
     margin: 0;
@@ -52,7 +51,7 @@ form {
     font-weight: 300;
 }
 
-.btn-buscar {
+.btn {
     width: 20%;
     padding: 1rem 0rem;
     background-color: #2b3237;
@@ -66,21 +65,12 @@ form {
     transition: background-color 0.2s ease;
 }
 
-.btn-limpar {
-    width: 20%;
-    padding: 1rem 0rem;
-    background-color: #2b3237;
-    color: #fff;
-    border: none;
-    border-radius: 100rem;
-    cursor: pointer;
-    font-size: 150%;
-    text-align: center;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
+.btn:hover {
+    background-color: #1c2022;
 }
 
 .informations-content {
+    min-height: 30rem;
     background-color: #c1daea;
     border-radius: 0 0 1rem 1rem;
     padding-inline: 1rem;
@@ -88,6 +78,7 @@ form {
 }
 
 .info {
+    padding-top: 1.3rem;
     text-align: left;
     margin-left: 2rem;
     font-size: 2rem;
@@ -103,5 +94,51 @@ form {
 .image-pokemon {
     display: flex;
     margin: auto;
-    width: 30vw;
+    width: 25vw;
+}
+
+@media (max-width: 768px) {
+    .pokedex-content {
+        width: 95%;
+        padding-block: 3% 3%;
+    }
+
+    .controles {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .input-nome {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .btn-buscar,
+    .btn-limpar {
+        width: 80%;
+        font-size: 120%;
+    }
+
+    .info {
+        padding-top: 0;
+        margin-left: 0.5em;
+    }
+
+    .informations-content {
+        min-height: 20rem;
+        padding: 1rem;
+    }
+
+    .id-pokemon,
+    .name-pokemon {
+        font-size: 1em;
+    }
+
+    .image-pokemon {
+        display: flex;
+        margin-top: 1.2em;
+        margin-inline: auto;
+        width: 10em;
+    }
 }

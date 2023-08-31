@@ -15,19 +15,21 @@
         <form>
             <div class="controles">
                 <input type="text" class="input-nome" id="inputName">
-                <button class="btn-buscar" id="btnBuscar"><span class="material-symbols-outlined">
-                    search
-                </span></button>
-                <button class="btn-limpar" id="btnLimpar"><span class="material-symbols-outlined">
-                    restart_alt
-                </span></button>
+                <button class="btn btn-buscar" id="btnBuscar">
+                    <span class="material-symbols-outlined">search</span></button>
+                <button class="btn btn-limpar" id="btnLimpar">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                </button>
             </div>
             <div class="informations-content">
-                <br>
-                <span class="info">ID: </span><span class="id-pokemon" id="txtId"></span>
-                <br>
-                <span class="info">Nome: </span><span class="name-pokemon" id="txtName"></span>
-                <br>
+                <div class="info">
+                    <span>ID:</span>
+                    <span class="id-pokemon" id="txtId"></span>
+                </div>
+                <div class="info">
+                    <span>Nome:</span>
+                    <span class="name-pokemon" id="txtName"></span>
+                </div>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" class="image-pokemon" id="imgPokemon">
             </div>
         </form>
