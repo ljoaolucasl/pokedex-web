@@ -147,3 +147,39 @@ form {
         width: 10em;
     }
 }
+
+.mensagem-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.mensagem {
+    background-color: #5aad5a;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.show-element {
+    height: auto;
+    overflow: visible;
+}
+
+.show-element .mensagem {
+    opacity: 1;
+    transform: translateY(0);
+}

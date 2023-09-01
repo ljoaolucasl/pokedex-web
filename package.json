@@ -2,7 +2,7 @@
   "name": "pokedex-web",
   "version": "1.0.0",
   "description": "",
-  "main": "tela-pokedex.js",
+  "main": "tela-lista-pokemons.js",
   "scripts": {
     "start": "webpack serve --mode production",
     "build": "webpack --mode production",

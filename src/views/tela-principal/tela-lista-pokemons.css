@@ -1,0 +1,144 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    background: url('https://free4kwallpapers.com/uploads/originals/2018/06/18/created-a-3d-render-of-a-pokemon-trophy-in-the-grass-wallpaper.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header {
+    background-color: #2b3237;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-nome {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 70%;
+}
+
+.btn-buscar,
+.btn-limpar {
+    padding: 0.5rem 1rem;
+    background-color: #2b3237;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.lista-pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+
+    border-radius: 1em;
+    margin-inline: auto;
+    width: 75vw;
+    min-height: 60em;
+    background-color: rgba(43, 50, 55, 0.8);
+    padding: 10px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-pokemon {
+    display: flex;
+    flex-direction: column;
+    background-color: #c1daea;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.card-pokemon:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 0 0.5rem #ffffff6d;
+}
+
+.name-pokemon {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.image-pokemon {
+    max-width: 100%;
+    height: auto;
+}
+
+.tipo-pokemon-color {
+    border-radius: 0.5rem;
+    padding-inline: 1em;
+}
+
+.id-pokemon, .name-pokemon, .tipo-pokemon {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mensagem-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.mensagem {
+    background-color: #5aad5a;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.show-element {
+    height: auto;
+    overflow: visible;
+}
+
+.show-element .mensagem {
+    opacity: 1;
+    transform: translateY(0);
+}

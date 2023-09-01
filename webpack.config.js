@@ -7,7 +7,8 @@ module.exports = {
 
   // O ponto de entrada da aplicação
   entry: {
-    index: path.resolve(__dirname, 'src/views', 'tela-pokedex.ts')
+    index: path.resolve(__dirname, 'src/views/tela-principal', 'tela-lista-pokemons.ts'),
+    detalhes: path.resolve(__dirname, 'src/views/tela-detalhes', 'tela-detalhes-pokemon.ts')
   },
 
   // Configuração de output do build
@@ -42,8 +43,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, 'src/views', 'tela-pokedex.html'),
+      template: path.resolve(__dirname, 'src/views/tela-principal', 'tela-lista-pokemons.html'),
       chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'detalhes.html',
+      template: path.resolve(__dirname, 'src/views/tela-detalhes', 'tela-detalhes-pokemon.html'),
+      chunks: ['detalhes']
     }),
 
     new CopyWebpackPlugin({
